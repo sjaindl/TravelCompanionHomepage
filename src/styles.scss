@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+body {
+    margin: 0px;
+    font-family: Roboto, sans-serif;
+    color: #02ccba;
+    background-color: #555555;
+    
+    /* background-image: "url(assets/images/logo.gif)";
+    background-repeat: no-repeat;
+    background-position: left top; */
+}
+
+h1.header, h2.header, h3.header {
+    text-align: center;
+}
+
+.text-standard {
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.mini {
+    /* font-size: 2vw; */
+    font-size: 60%;
+    padding-left: 10px;
+}
+
+.small {
+    /* font-size: 2vw; */
+    font-size: 120%;
+    padding-left: 10px;
+}
+
+.normal {
+    /* font-size: 2.5vw; */
+    font-size: 150%;
+    padding-left: 10px;
+}
+
+.large {
+    /* font-size: 3.5vw; */
+    font-size: 200%;
+    padding-left: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}

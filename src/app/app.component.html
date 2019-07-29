@@ -1,21 +1,72 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
+<div class="text-standard">
+  <h1 class="header">
     Welcome to {{ title }}!
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
-<router-outlet></router-outlet>
+  <h3 class="header">
+    {{ subtitle }}
+  </h3>
+
+  <iframe width="100%" height="800px" src="https://www.youtube.com/embed/IEebsEjLKN8?autoplay=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  </iframe>
+  
+  <br>
+  <br>
+
+  <p class="text-standard">
+    TravelCompanion's goal is to let explore, plan and remember travels. It has an integrated sign-in mechanism with either Facebook, Google or email. This allows to synchronize data via Firebase over all your different devices. 
+  </p>
+  <br>
+  <br>
+
+  <img width="100" alt="Explore" src="assets/images/icon_explore.png">
+  <p class="normal bold">Explore</p>
+  <p class="text-standard">
+    The explore feature offers a Google Map that allows to search for desired destinations. Basic information about the destination and country as well as photos about the country, place and geographical location can be retrieved. Information provided by Wikipedia, Wikivoyage, Google and LonelyPlanet about the destination are offered, too.
+  </p>
+  <br>
+  <br>
+  
+  <img width="100" alt="Plan" src="assets/images/icon_plan.png">
+  <p class="normal bold">Plan</p>
+  <p class="text-standard">
+    The plan feature allows to add travel plans for destinations that you have previously explored. The travel plans include flights, public transport (including ferries), hotels, restaurants and attractions.
+    <br>
+    <br>
+    Flight and public transport search allows to enter an origin and destination with autocompletion support and a travel date. Available transport opportunities with detailed information are displayed in a TableView and can be added to the trip.
+    <br>
+    <br>
+    Hotels, restaurants and attractions can be searched by destination: You can drop a pin on the map, which triggers a search for the chosen place type and distance. The search can further be restricted by text search. Attractions are subdivided in various groups offered by Google Places, that can be chosen in a picker (e.g. amusement parks, zoos, general points of interest, etc.).
+    <br>
+    <br>
+    The plan overview displays all flights, public transports, hotels, restaurants and attractions in a grouped TableView. By tapping an item it is possible to delete it or to add a note. Furthermore, an image from the linked explore photos can be chosen by tapping the placeholder image.
+    <br>
+    <br>
+    Finally, plans are subdivided into upcoming and past trips, depending on the travel date.
+  </p>
+  <br>
+  <br>
+
+  <img width="100" alt="Remember" src="assets/images/icon_remember.png">
+  <p class="normal bold">Remember</p>
+  <p class="text-standard">
+    The remember feature displays past trips (or trips that have been started), where you can add photos from the gallery or camera to remember your trip.
+  </p>
+
+  <br>
+  <a href="https://apps.apple.com/us/app/the-travel-companion/id1441554384" target="blank">
+    <img width="300" alt="Download on the App Store" src="assets/images/download_appstore.png">
+  </a>
+
+  <br><br>
+</div>
+
+<!-- Social feed -->
+<div class="icon-bar">
+  <a href="https://www.facebook.com/thetravelcompanionapp/" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a> 
+  <a href="https://www.instagram.com/the_travel_companion_app/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a> 
+  <a href="https://apps.apple.com/us/app/the-travel-companion/id1441554384" target="_blank" class="apple"><i class="fab fa-apple"></i></a> 
+  <a href="mailto:thetravelcompanion.app@gmail.com" class="mail"><i class="fa fa-envelope"></i></a> 
+</div>
+
+<cookie-law></cookie-law>
