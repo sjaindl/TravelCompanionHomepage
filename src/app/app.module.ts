@@ -4,7 +4,23 @@ import { NgModule } from '@angular/core'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
-import { CookieLawModule } from 'angular2-cookie-law'
+import { NgcCookieConsentModule, NgcCookieConsentConfig } from 'ngx-cookieconsent'
+
+const cookieConfig: NgcCookieConsentConfig = {
+  cookie: {
+    domain: 'hvtdpstainz.at'
+  },
+  palette: {
+    popup: {
+      background: '#c2185b'
+    },
+    button: {
+      background: '#f1d600'
+    }
+  },
+  theme: 'edgeless',
+  type: 'opt-out'
+}
 
 @NgModule({
   declarations: [
@@ -14,7 +30,7 @@ import { CookieLawModule } from 'angular2-cookie-law'
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
-    CookieLawModule
+    NgcCookieConsentModule.forRoot(cookieConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

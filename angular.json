@@ -27,9 +27,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/cookieconsent/build/cookieconsent.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/cookieconsent/build/cookieconsent.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -135,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "TravelCompanionHomepage"
+  "defaultProject": "TravelCompanionHomepage",
+  "cli": {
+    "analytics": "1f5454a5-a350-4447-b71c-4ff55d1d9a21"
+  }
 }

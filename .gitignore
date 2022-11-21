@@ -45,3 +45,5 @@ Thumbs.db
 
 node_modules
 keys.ts
+
+.angular/cache
